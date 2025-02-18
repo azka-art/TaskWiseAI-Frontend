@@ -33,11 +33,13 @@ VITE_API_URL=http://localhost:5000
 npm run dev
 ```
 ## 🔥 Fitur
-✅ **Autentikasi User** - Sistem login dan register pengguna.
-✅ **Manajemen Tugas** - Tambah, edit, hapus, dan lihat detail tugas.
-✅ **Prioritas & Status** - Atur tugas berdasarkan prioritas dan statusnya.
-✅ **Mock API (MirageJS)** - Bisa berjalan tanpa backend nyata untuk pengujian.
-✅ **Responsif & Modern UI** - Menggunakan Chakra UI untuk tampilan clean dan elegan.
+<ul>
+  <li>✅ <b>Autentikasi User</b> - Sistem login dan register pengguna.</li>
+  <li>✅ <b>Manajemen Tugas</b> - Tambah, edit, hapus, dan lihat detail tugas.</li>
+  <li>✅ <b>Prioritas & Status</b> - Atur tugas berdasarkan prioritas dan statusnya.</li>
+  <li>✅ <b>Mock API (MirageJS)</b> - Bisa berjalan tanpa backend nyata untuk pengujian.</li>
+  <li>✅ <b>Responsif & Modern UI</b> - Menggunakan Chakra UI untuk tampilan clean dan elegan.</li>
+</ul>
 
 ## 📜 Lisensi
 Proyek ini menggunakan lisensi MIT. Anda bebas menggunakan dan memodifikasinya.
