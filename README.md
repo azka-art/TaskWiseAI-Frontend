@@ -1,8 +1,24 @@
-# React + Vite
+# 🚀 TaskWiseAI - Frontend (React + Vite)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Untuk sisi FrontEnd TaskWiseAI, dibangun menggunakan **React.js** dan **Vite**. Proyek ini menggunakan **Chakra UI** untuk desain antarmuka yang modern dan responsif serta **Zustand** untuk manajemen state yang ringan.
 
-Currently, two official plugins are available:
+## 📌 Teknologi yang Digunakan
+- ⚡ **React** – Library JavaScript untuk membangun antarmuka pengguna.
+- 🔥 **Vite** – Build tool cepat untuk proyek React.
+- 🎨 **Chakra UI** – Library UI berbasis komponen yang fleksibel.
+- 🗄 **Zustand** – State management sederhana dan efisien.
+- 🌐 **React Router** – Navigasi halaman dalam aplikasi React.
+- 🔗 **Axios** – Library untuk HTTP request ke backend.
+- 🏗 **MirageJS** – API mock untuk pengujian frontend.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🛠 Instalasi & Menjalankan Proyek
+
+### 1️⃣ Clone Repository
+```bash
+git clone https://github.com/username/taskwiseai-frontend.git
+cd taskwiseai-frontend
+```
+### 2️⃣ Install Dependencies
+```bash
+npm install
+```
