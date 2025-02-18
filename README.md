@@ -1,4 +1,4 @@
-# 🚀 TaskWiseAI - Frontend (React + Vite)
+# 🚀 TaskWiseAI - Frontend 
 
 Untuk sisi FrontEnd TaskWiseAI, dibangun menggunakan **React.js** dan **Vite**. Proyek ini menggunakan **Chakra UI** untuk desain antarmuka yang modern dan responsif serta **Zustand** untuk manajemen state yang ringan.
 
@@ -33,13 +33,11 @@ VITE_API_URL=http://localhost:5000
 npm run dev
 ```
 ## 🔥 Fitur
-<ul>
-  <li>✅ <b>Autentikasi User</b> - Sistem login dan register pengguna.</li>
-  <li>✅ <b>Manajemen Tugas</b> - Tambah, edit, hapus, dan lihat detail tugas.</li>
-  <li>✅ <b>Prioritas & Status</b> - Atur tugas berdasarkan prioritas dan statusnya.</li>
-  <li>✅ <b>Mock API (MirageJS)</b> - Bisa berjalan tanpa backend nyata untuk pengujian.</li>
-  <li>✅ <b>Responsif & Modern UI</b> - Menggunakan Chakra UI untuk tampilan clean dan elegan.</li>
-</ul>
+- ✅ **Autentikasi User** - Sistem login dan register pengguna.
+- ✅ **Manajemen Tugas** - Tambah, edit, hapus, dan lihat detail tugas.
+- ✅ **Prioritas & Status** - Atur tugas berdasarkan prioritas dan statusnya.
+- ✅ **Mock API (MirageJS)** - Bisa berjalan tanpa backend nyata untuk pengujian.
+- ✅ **Responsif & Modern UI** - Menggunakan Chakra UI untuk tampilan clean dan elegan.
 
 ## 📜 Lisensi
 Proyek ini menggunakan lisensi MIT. Anda bebas menggunakan dan memodifikasinya.
