@@ -1,0 +1,165 @@
+/* 🌌 Task Card */
+.task-card {
+    background: rgba(0, 0, 0, 0.9);
+    border-radius: 16px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    box-shadow: 0px 0px 20px rgba(0, 255, 255, 0.3);
+    border: 2px solid rgba(0, 255, 255, 0.2);
+    position: relative;
+}
+
+/* 🔹 Header: Title & Status Badge */
+.task-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 100%;
+    position: relative;
+}
+
+/* 🎯 Task Title */
+.task-title {
+    font-size: 22px;
+    font-weight: bold;
+    color: #00f0ff;
+    text-shadow: 0px 0px 10px #00f0ff;
+}
+
+/* 📝 Task Description */
+.task-description {
+    font-size: 16px;
+    color: rgba(200, 255, 255, 0.9);
+}
+
+/* ✅ Fix: Make Deadline & Priority More Visible */
+.task-deadline {
+    font-size: 14px;
+    font-weight: bold;
+    color: white;
+    margin-top: 8px;
+}
+
+/* 🎖 Priority Text */
+.task-priority {
+    font-size: 14px;
+    font-weight: bold;
+    margin-top: 5px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+/* ✅ Improve Priority Text Colors */
+.high-priority {
+    color: red;
+    font-weight: bold;
+    text-shadow: 1px 1px 5px rgba(255, 0, 0, 0.6);
+}
+
+.medium-priority {
+    color: orange;
+    font-weight: bold;
+    text-shadow: 1px 1px 5px rgba(255, 165, 0, 0.6);
+}
+
+.low-priority {
+    color: green;
+    font-weight: bold;
+    text-shadow: 1px 1px 5px rgba(0, 255, 0, 0.6);
+}
+
+/* ✅ Fix: Status Badge Position & Size */
+.status-badge {
+    font-size: 12px;
+    padding: 8px 16px;
+    border-radius: 12px;
+    font-weight: bold;
+    text-align: center;
+    position: absolute;
+    top: 12px; /* 🔼 Adjust for better alignment */
+    right: 20px; /* 🔼 Slightly reduce right margin */
+    min-width: 100px; /* ✅ Ensure a consistent size */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0px 0px 15px rgba(255, 255, 255, 0.8);
+}
+
+/* ✅ Improve Status Badge Colors */
+.pending {
+    background: linear-gradient(45deg, orange, darkorange);
+    color: white;
+    box-shadow: 0px 0px 15px rgba(255, 165, 0, 0.8);
+}
+
+.in-progress {
+    background: linear-gradient(45deg, blue, darkblue);
+    color: white;
+    box-shadow: 0px 0px 15px rgba(0, 170, 255, 0.8);
+}
+
+.completed {
+    background: linear-gradient(45deg, green, darkgreen);
+    color: white;
+    box-shadow: 0px 0px 15px rgba(0, 255, 0, 0.8);
+}
+
+/* ✅ Footer: Button Alignment */
+.task-footer {
+    display: flex;
+    gap: 10px; /* ✅ Ensure spacing between buttons */
+    margin-top: 12px;
+    align-items: center;
+}
+
+/* 🔹 Update Button */
+.update-button {
+    padding: 8px 16px;
+    border-radius: 10px;
+    background: linear-gradient(45deg, #ff007f, #00e6ff);
+    color: white;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    width: auto; /* ✅ Prevents stretching */
+}
+
+.update-button:hover {
+    background: linear-gradient(45deg, #ff0096, #00f2ff);
+}
+
+/* 🔥 Delete Button */
+.delete-button {
+    padding: 8px 16px;
+    border-radius: 10px;
+    background: red;
+    color: white;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    width: auto; /* ✅ Prevents stretching */
+}
+
+.delete-button:hover {
+    background: darkred;
+}
+
+/* ✅ Responsive Adjustments */
+@media (max-width: 768px) {
+    .task-footer {
+        flex-direction: row; /* ✅ Keeps buttons side by side */
+        justify-content: flex-start;
+    }
+
+    .status-badge {
+        position: relative;
+        margin-top: 10px;
+    }
+}
+
+

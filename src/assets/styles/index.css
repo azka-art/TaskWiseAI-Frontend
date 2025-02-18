@@ -1,0 +1,501 @@
+/* 🎨 Import Futuristic Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;700&family=Orbitron:wght@400;700&family=Exo+2:wght@300;600&display=swap");
+
+/* 🌌 Cyberpunk Theme Variables */
+:root {
+  --background-color: #0b0014;
+  --card-bg: rgba(255, 255, 255, 0.08);
+  --neon-blue: #00e6ff;
+  --neon-purple: #a855f7;
+  --neon-pink: #ff007f;
+  --neon-green: #00ff99;
+  --neon-glow: rgba(0, 230, 255, 0.8);
+  --text-color: white;
+  --font-primary: "Plus Jakarta Sans", sans-serif;
+  --font-heading: "Orbitron", sans-serif;
+  --font-body: "Exo 2", sans-serif;
+}
+
+html, body {
+  background: var(--background-color);
+  color: var(--text-color);
+  font-family: var(--font-primary);
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+/* 🚀 "TaskWiseAI" Logo */
+.taskwise-logo {
+  font-size: 16px;
+  font-family: 'Orbitron', sans-serif;
+  text-transform: uppercase;
+  color: #00e6ff;
+  text-shadow: 0 0 15px rgba(0, 230, 255, 0.9);
+  font-weight: bold;
+  margin-right: 12px;
+}
+
+
+/* 🌟 Futuristic "Your Tasks" Title */
+.your-tasks-title {
+  font-size: 48px; /* Bigger to dominate the UI */
+  font-family: 'Orbitron', sans-serif;
+  text-transform: uppercase;
+  text-align: center;
+  color: #00f7ff;
+  /*text-shadow: 0 0 12px var(--neon-blue), 0 0 24px var(--neon-purple);*/
+  background: linear-gradient(45deg, #00d9ff, #ff95ff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  /*text-shadow: 0 0 10px rgba(0, 230, 255, 0.9);*/
+  font-weight: 900;
+  margin-bottom: 32px; /* More spacing below */
+  position: relative;
+}
+
+
+/* 🔥 Add Soft Neon Flicker Effect */
+@keyframes flickerText {
+  0% { opacity: 1; text-shadow: 0 0 15px rgba(0, 230, 255, 0.8); }
+  100% { opacity: 0.8; text-shadow: 0 0 20px rgba(255, 0, 255, 1); }
+}
+
+/* 🏗 Layout: Place Task Summary Beside Task List */
+.dashboard-content {
+  display: flex; /* Enables horizontal layout */
+  align-items: flex-start; /* Aligns items to the top */
+  gap: 20px; /* Adds spacing between summary & task list */
+  margin-top: 20px;
+}
+
+
+/* 🔻 Glowing Cyberpunk Underline */
+.your-tasks-title::after {
+  content: "";
+  display: block;
+  width: 160px; /* Increase width for better visibility */
+  height: 5px; /* Make it slightly thicker */
+  background: linear-gradient(to right, #00e6ff, #ff00ff);
+  margin: 12px auto 0;
+  border-radius: 3px;
+  box-shadow: 0 0 15px rgba(0, 230, 255, 0.9);
+}
+
+/* 🕶 Task Card Layout Fix */
+.task-card {
+  background: rgba(10, 10, 20, 0.95);
+  border-radius: 16px;
+  padding: 5%;
+  box-shadow: 0 0 10px rgba(0, 230, 255, 0.6);
+  transition: all 0.3s ease-in-out;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: auto;
+  margin-bottom: 2%; /* Increase spacing between cards */
+}
+
+.task-card:hover {
+  box-shadow: 0 0 18px rgba(0, 230, 255, 0.9);
+  transform: translateY(-4px) scale(1.02);
+}
+
+/* 📌 Task Content */
+.task-title {
+  font-family: var(--font-heading);
+  font-size: 24px;
+  color: var(--neon-blue);
+  text-shadow: 0 0 15px rgba(0, 230, 255, 0.9);
+  font-weight: 700;
+  margin-bottom: 4px;
+  width: 100%; /* Ensure full width inside task list */
+}
+
+.task-title:hover {
+  text-shadow: 0 0 20px var(--neon-purple);
+}
+
+.task-description {
+
+  font-size: 16px;
+  color: rgba(173, 216, 230, 0.9);
+  line-height: 1.6;
+  flex-grow: 1; /* Pushes button to the bottom */
+}
+
+/* ✅ Task List - Flexible Width */
+.task-list {
+  flex-grow: 1; /* Takes the remaining space */
+  display: flex;
+  flex-direction: column;
+  gap: 20px; /* Adds spacing between task cards */
+}
+
+/* 📊 Task Summary Fix */
+.task-summary {
+  position: sticky;
+  top: 22%; /* Keeps it at the top when scrolling */
+  height: fit-content; /* Prevents overflow */
+  width: 300px;
+  background: rgba(10, 10, 20, 0.8);
+  border-radius: 12px;
+  padding: 20px;
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(0, 230, 255, 0.7);
+  box-shadow: 0 0 18px rgba(0, 230, 255, 0.5);
+  z-index: 1000; /* Ensures it stays above other elements */
+}
+
+/* 🎯 Task Summary Header */
+.summary-header {
+  font-size: 15px;
+  font-family: 'Orbitron', sans-serif;
+  color: var(--neon-blue);
+  text-shadow: 0 0 10px var(--neon-glow);
+}
+
+/* 🔢 Task Summary Values (Make numbers glow) */
+.summary-value {
+  font-size: 15px;
+  font-weight: bold;
+  color: var(--neon-purple);
+  text-shadow: 0 0 10px var(--neon-purple);
+}
+
+
+.task-summary h3 {
+  font-size: 10px;
+  color: var(--neon-blue);
+  text-shadow: 0 0 8px var(--neon-glow);
+}
+
+
+/* 🎖 Status Badge (Fix Position & Sizing) */
+.status-badge {
+  font-size: 12px;
+  padding: 6px 12px;
+  border-radius: 14px;
+  font-weight: bold;
+  text-shadow: 0 0 4px rgba(255, 255, 255, 0.8);
+  box-shadow: 0 0 8px rgba(255, 255, 255, 0.3);
+  position: absolute;
+  top: 14px;
+  right: 14px;
+}
+
+/* 🔥 Animated Status Badges */
+.pending {
+  background: linear-gradient(45deg, #ff9900, #ff6600);
+  animation: pulseOrange 1.5s infinite alternate;
+}
+
+@keyframes pulseOrange {
+  0% { box-shadow: 0 0 8px #ff9900; }
+  100% { box-shadow: 0 0 12px #ff6600; }
+}
+
+.in-progress {
+  background: linear-gradient(45deg, #00e6ff, #0044ff);
+  animation: pulseBlue 1.5s infinite alternate;
+}
+
+@keyframes pulseBlue {
+  0% { box-shadow: 0 0 8px #00e6ff; }
+  100% { box-shadow: 0 0 12px #0044ff; }
+}
+
+
+.completed {
+  background: linear-gradient(45deg, var(--neon-green), #009944);
+  animation: pulseGreen 1.5s infinite alternate;
+}
+
+@keyframes pulseGreen {
+  0% { box-shadow: 0 0 12px var(--neon-green); }
+  100% { box-shadow: 0 0 22px #009944; }
+}
+
+/* 🔘 Improved Button Alignment */
+.task-button {
+  width: auto;
+  padding: 8px 20px;
+  border-radius: 8px;
+  background: linear-gradient(90deg, rgba(255, 0, 150, 0.6), rgba(0, 242, 255, 0.6));
+  color: white;
+  font-size: 14px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.task-button:hover {
+  box-shadow: 0 0 10px rgba(255, 0, 150, 0.5);
+}
+
+
+/* 🔘 View Details Button */
+.task-dashboard-neon-button {
+  background: linear-gradient(135deg, #ff007f 30%, #00e6ff 100%);
+  border-radius: 10px;
+  padding: 10px 20px;
+  font-size: 14px;
+  font-weight: 700;
+  color: white;
+  text-shadow: 0 0 3px rgba(255, 255, 255, 0.6);
+  box-shadow: 0 0 8px rgba(255, 0, 127, 0.4), 0 0 14px rgba(0, 230, 255, 0.5);
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  align-self: flex-start;
+}
+
+.task-dashboard-neon-button:hover {
+  box-shadow: 0 0 12px rgba(255, 0, 255, 0.7), 0 0 18px rgba(0, 230, 255, 0.8);
+  transform: scale(1.05);
+}
+
+
+/* 🌌 Cyberpunk Background - Seamless Fix */
+.cyber-bg {
+  background: linear-gradient(to bottom, #001f3f, #000a1f 70%);
+  background-size: cover;
+  animation: cyberFlow 12s infinite alternate;
+}
+
+@keyframes glowEffect {
+  0% { filter: drop-shadow(0 0 8px var(--neon-blue)); }
+  100% { filter: drop-shadow(0 0 24px var(--neon-purple)); }
+}
+
+/* 🚀 Navbar - Ensure Header & Buttons are properly aligned */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 30px;
+  background: rgba(10, 10, 20, 0.9);
+  backdrop-filter: blur(12px);
+  box-shadow: 0 0 15px rgba(0, 230, 255, 0.6);
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 100;
+}
+
+/* 🏗 Header Flexbox Fix */
+.header-buttons {
+  display: flex;
+  gap: 16px;
+}
+
+/* 🏗 Ensure Buttons are Centered Properly */
+.header-buttons .nav-button {
+  display: inline-block;
+  text-align: center;
+  font-size: 14px;
+}
+
+
+/* 🔘 Add Task & Logout Button Fix */
+.nav-button {
+  padding: 14px 28px; /* Increase button size */
+  border-radius: 14px;
+  font-size: 16px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+/* 🌈 Cyberpunk Gradient for Add Task */
+.add-task-button {
+  font-size: 12px;
+  border-radius: 20px;
+  font-weight: bold;
+  text-shadow: 0 0 4px rgba(255, 255, 255, 0.8);
+  box-shadow: 0 0 8px rgba(255, 255, 255, 0.3);
+  background: linear-gradient(135deg, #00e6ff, #ff007f);
+  box-shadow: 0 0 5% rgba(0, 230, 255, 0.8), 0 0 25px rgba(255, 0, 127, 0.6);
+}
+
+/* 🔴 Cyberpunk Red for Logout */
+.logout-button {
+  font-size: 12px;
+  border-radius: 20px;
+  font-weight: bold;
+  text-shadow: 0 0 4px rgba(255, 255, 255, 0.8);
+  box-shadow: 0 0 8px rgba(255, 255, 255, 0.3);
+  background: linear-gradient(135deg, #ff0000, #ff6600);
+  box-shadow: 0 0 5% rgba(255, 0, 0, 0.8), 0 0 25px rgba(255, 102, 0, 0.6);
+}
+
+/* ✨ Improve Hover Effects */
+.nav-button:hover {
+  box-shadow: 0 0 20px rgba(255, 255, 255, 1);
+  transform: scale(1.08);
+}
+
+
+
+/* ✨ Cyberpunk Scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--neon-blue);
+  border-radius: 12px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--neon-pink);
+}
+
+/* 💡 Glow Animation */
+@keyframes glowEffect {
+  0% { filter: drop-shadow(0 0 6px var(--neon-blue)); }
+  100% { filter: drop-shadow(0 0 22px var(--neon-purple)); }
+}
+
+/* ✨ Improved Quote Box Styling */
+.quote-box {
+  background: rgba(15, 15, 25, 0.85); /* Semi-transparent background */
+  padding: 16px 28px;
+  border-radius: 10px;
+  max-width: 80%;
+  margin: 20px auto 30px;
+  text-align: center;
+  /*box-shadow: 0 0 15px rgba(0, 230, 255, 0.4);
+  backdrop-filter: blur(8px);*/
+}
+
+/* 🎨 Futuristic Quote Text */
+.quote-text {
+  font-size: 13px;
+  font-style: italic; /* Makes the text italic */
+  color: white;
+  text-align: center;
+  color: white;
+  line-height: 1.6;
+  text-shadow: 0 0 10px rgba(0, 230, 255, 0.8);
+}
+
+/* LOGINPAGE */
+
+/* 🔹 Background */
+.login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: url("LoginPage.png") no-repeat center center/cover;
+}
+
+/* 🔹 Kotak Login */
+.login-box {
+  width: 400px;
+  padding: 20px;
+  border-radius: 15px;
+  background: rgba(0, 0, 0, 0.7);
+  box-shadow: 0 4px 15px rgba(0, 255, 255, 0.3);
+  text-align: center;
+}
+
+/* 🔹 Judul */
+.login-title {
+  font-size: 36px;
+  font-family: 'Orbitron', sans-serif;
+  text-transform: uppercase;
+  color: #00e6ff;
+  text-shadow: 0 0 15px rgba(0, 230, 255, 0.9);
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+
+/* 🔹 Input Fields */
+.neon-input {
+  width: 100%;
+  height: 40px;
+  padding: 10px;
+  border: 2px solid rgba(0, 242, 255, 0.6);
+  border-radius: 8px;
+  background: transparent;
+  color: white;
+  outline: none;
+  transition: all 0.3s ease-in-out;
+}
+
+.neon-input::placeholder {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.neon-input:focus {
+  border-color: #00f2ff;
+  box-shadow: 0 0 10px rgba(0, 242, 255, 0.8);
+}
+
+/* 🔹 Tombol Login */
+.neon-button {
+  width: 100%;
+  height: 40px;
+  border: none;
+  border-radius: 10px;
+  background: linear-gradient(90deg, rgba(255, 0, 150, 0.8), rgba(0, 242, 255, 0.8));
+  color: white;
+  font-size: 14px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.neon-button:hover {
+  box-shadow: 0 0 15px rgba(255, 0, 150, 0.6);
+  background: linear-gradient(90deg, rgba(255, 0, 150, 1), rgba(0, 242, 255, 1));
+}
+
+/* 🔹 Lupa Password & Register */
+.forgot-register {
+  display: flex;
+  justify-content: center;
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.7);
+  margin-top: 10px;
+}
+
+.forgot-register a {
+  color: #00f2ff;
+  text-decoration: none;
+  transition: color 0.3s ease-in-out;
+}
+
+.forgot-register a:hover {
+  color: #ff0096;
+}
+
+/* 🔹 Pemisah antara "Lupa Password" dan "Daftar" */
+.separator {
+  color: rgba(255, 255, 255, 0.5);
+  padding: 0 5px;
+}
+
+/* 🔹 Error & Success Messages */
+.error-text {
+  color: #ff5e5e;
+  font-size: 14px;
+  margin-bottom: 5px;
+}
+
+.success-text {
+  color: #5eff7e;
+  font-size: 14px;
+  margin-bottom: 5px;
+}
+
+
+
+
+

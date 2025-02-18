@@ -1,0 +1,92 @@
+/* 🎨 Login Page Styles */
+@import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;700&family=Orbitron:wght@400;700&family=Exo+2:wght@300;600&display=swap");
+
+.login-container {
+    background: url("loginPage.jpg") no-repeat center center/cover !important;/* Adjust based on your project structure */
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+/* ✅ Kotak Login */
+.login-box {
+  width: 400px;
+  padding: 20px;
+  border-radius: 15px;
+  background: rgba(0, 0, 0, 0.7);
+  box-shadow: 0 4px 15px rgba(0, 255, 255, 0.3);
+  text-align: center;
+}
+
+/* ✅ Judul */
+.login-title {
+  font-size: 36px;
+  font-family: 'Orbitron', sans-serif;
+  text-transform: uppercase;
+  color: #00e6ff;
+  text-shadow: 0 0 15px rgba(0, 230, 255, 0.9);
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+
+/* ✅ Input Fields */
+.neon-input {
+  width: 100%;
+  height: 40px;
+  padding: 10px;
+  border: 2px solid rgba(0, 242, 255, 0.6);
+  border-radius: 8px;
+  background: transparent;
+  color: white;
+  outline: none;
+  transition: all 0.3s ease-in-out;
+}
+
+.neon-input::placeholder {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.neon-input:focus {
+  border-color: #00f2ff;
+  box-shadow: 0 0 10px rgba(0, 242, 255, 0.8);
+}
+
+/* ✅ Tombol Login */
+.neon-button {
+  width: 100%;
+  height: 40px;
+  border: none;
+  border-radius: 10px;
+  background: linear-gradient(90deg, rgba(255, 0, 150, 0.8), rgba(0, 242, 255, 0.8));
+  color: white;
+  font-size: 14px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.neon-button:hover {
+  box-shadow: 0 0 15px rgba(255, 0, 150, 0.6);
+  background: linear-gradient(90deg, rgba(255, 0, 150, 1), rgba(0, 242, 255, 1));
+}
+
+/* ✅ Lupa Password & Register */
+.forgot-register {
+  display: flex;
+  justify-content: center;
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.7);
+  margin-top: 10px;
+}
+
+.forgot-register a {
+  color: #00f2ff;
+  text-decoration: none;
+  transition: color 0.3s ease-in-out;
+}
+
+.forgot-register a:hover {
+  color: #ff0096;
+}

@@ -1,0 +1,172 @@
+/* 🎨 Dashboard Page Styles */
+.dashboard-container {
+    background: url("dashboard.jpg") no-repeat center center/cover;
+    min-height: 100vh;
+    padding: 20px;
+}
+  
+/* ✅ Header */
+.dashboard-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+/* 🔹 TaskWise Logo */
+.taskwise-logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: var(--neon-blue);
+}
+
+/* ✅ Navigation Links (Add Task & Logout) */
+.nav-links {
+    display: flex;
+    gap: 20px;
+}
+
+/* 🔗 Convert Buttons to Links */
+.nav-link {
+    font-size: 16px;
+    font-weight: bold;
+    color: #00f0ff; /* Neon blue */
+    text-decoration: none;
+    cursor: pointer;
+    transition: color 0.3s ease-in-out;
+}
+
+/* 🔥 Hover Effect */
+.nav-link:hover {
+    color: #ff00ff;
+    text-shadow: 0px 0px 10px rgba(255, 0, 255, 0.8);
+}
+
+/* ✅ Title & Quote */
+.dashboard-title {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.your-tasks-title {
+    font-size: 36px;
+    font-weight: bold;
+    color: cyan;
+}
+
+.quote-box {
+    background: rgba(0, 0, 0, 0.7);
+    padding: 15px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.quote-text {
+    font-size: 16px;
+    color: white;
+}
+
+
+/* ✅ Ensure Content Scrolls But Summary Stays */
+.dashboard-content {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    align-items: flex-start; /* ✅ Keeps task list taller */
+}
+
+.task-list {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+/* 🎯 Task Summary Box */
+ed dashboard.css
+css
+Copy
+Edit
+/* 🎯 Make Task Summary Sticky */
+.task-summary {
+    flex: 1;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.85); /* ✅ Make it slightly darker */
+    border-radius: 12px;
+    box-shadow: 0px 0px 20px rgba(0, 255, 255, 0.3);
+    border: 2px solid rgba(0, 255, 255, 0.5); /* ✅ Adds a neon border */
+    width: 250px; /* ✅ Fixed width for consistency */
+    text-align: left;
+    transition: all 0.3s ease-in-out;
+
+    /* ✅ Make it sticky */
+    position: sticky;
+    top: 20px; /* ✅ Sticks when scrolling */
+}
+
+/* 🌟 Task Summary Header */
+.summary-header {
+    font-size: 20px;
+    font-weight: bold;
+    color: #00f0ff; /* ✅ Neon Cyan */
+    text-shadow: 0px 0px 8px #00f0ff;
+    margin-bottom: 12px;
+}
+
+/* 📌 Task Summary Row */
+.task-summary-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 16px;
+    font-weight: bold;
+    color: white;
+    padding: 6px 0;
+    transition: transform 0.2s ease-in-out;
+}
+
+/* ✅ Glow Effect on Hover */
+.task-summary-item:hover {
+    transform: scale(1.05);
+    text-shadow: 0px 0px 8px rgba(255, 255, 255, 0.7);
+}
+
+/* ✅ Status Number Styling */
+.summary-value {
+    font-weight: bold;
+    font-size: 18px;
+    text-shadow: 0px 0px 8px rgba(255, 0, 255, 0.7);
+}
+
+/* 🌈 Status-Specific Colors */
+.pending-value {
+    color: orange;
+    text-shadow: 0px 0px 8px rgba(255, 165, 0, 0.8);
+}
+
+.in-progress-value {
+    color: blue;
+    text-shadow: 0px 0px 8px rgba(0, 170, 255, 0.8);
+}
+
+.completed-value {
+    color: lime;
+    text-shadow: 0px 0px 8px rgba(0, 255, 0, 0.8);
+}
+
+/* ✅ Responsive Adjustments */
+@media (max-width: 768px) {
+    .task-summary {
+        width: 100%;
+        margin-top: 20px;
+    }
+
+    .task-summary-item {
+        font-size: 14px;
+    }
+
+    .summary-value {
+        font-size: 16px;
+    }
+}
+
