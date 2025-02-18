@@ -22,3 +22,22 @@ cd taskwiseai-frontend
 ```bash
 npm install
 ```
+### 3️⃣ Konfigurasi API Backend
+- Pastikan Anda memiliki backend yang berjalan di `http://localhost:5000` (atau sesuaikan dengan API yang digunakan).
+- Anda bisa mengatur URL API dengan membuat file `.env` di root proyek
+```bash
+VITE_API_URL=http://localhost:5000
+```
+### 4️⃣ Jalankan Proyek
+```bash
+npm run dev
+```
+## 🔥 Fitur
+✅ **Autentikasi User** - Sistem login dan register pengguna.
+✅ **Manajemen Tugas** - Tambah, edit, hapus, dan lihat detail tugas.
+✅ **Prioritas & Status** - Atur tugas berdasarkan prioritas dan statusnya.
+✅ **Mock API (MirageJS)** - Bisa berjalan tanpa backend nyata untuk pengujian.
+✅ **Responsif & Modern UI** - Menggunakan Chakra UI untuk tampilan clean dan elegan.
+
+## 📜 Lisensi
+Proyek ini menggunakan lisensi MIT. Anda bebas menggunakan dan memodifikasinya.
