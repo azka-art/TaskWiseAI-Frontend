@@ -1,0 +1,128 @@
+/* ========== AddTaskPage.css (Compact Version) ========== */
+
+/* 🌌 Container utama untuk form Add Task */
+.add-task-container {
+    background: rgba(0, 0, 0, 0.8);
+    border-radius: 12px;
+    padding: 20px;
+    width: 100%;
+    max-width: 400px; /* Lebar maksimum lebih kecil */
+    margin: 1.5rem auto;
+    box-shadow: 0 0 15px rgba(0, 255, 255, 0.2); /* Kurangi intensitas bayangan */
+    border: 2px solid rgba(0, 255, 255, 0.1);    /* Kurangi ketebalan warna border */
+    position: relative;
+    animation: fadeIn 0.4s ease; /* Animasi lebih singkat */
+  }
+  
+  /* Animasi fadeIn */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(8px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  /* 🔹 Title: "Tambah Task Baru" */
+  .add-task-title {
+    font-size: 1.4rem;        /* Diperkecil dari 1.8rem */
+    font-weight: bold;
+    color: #00f0ff;
+    text-shadow: 0 0 8px #00f0ff;
+    margin-bottom: 1rem;
+    text-align: center;
+  }
+  
+  /* 🏷 Group tiap label + input */
+  .form-group {
+    margin-bottom: 1rem;      /* Kurangi jarak antar form-group */
+  }
+  
+  /* 🔖 Label */
+  .form-label {
+    display: block;
+    font-size: 0.85rem;       /* Diperkecil dari 0.95rem */
+    font-weight: bold;
+    color: rgba(200, 255, 255, 0.9);
+    margin-bottom: 6px;
+    text-shadow: 0 0 3px rgba(0, 255, 255, 0.3);
+  }
+  
+  /* ✏️ Input Chakra UI (form-input) */
+  .form-input {
+    width: 100%;
+    background: rgba(30, 30, 30, 1);
+    border-radius: 6px;       /* Lebih kecil dari 8px */
+    border: 1px solid rgba(0, 255, 255, 0.2);
+    padding: 8px;             /* Kurangi padding */
+    font-size: 0.85rem;       /* Kecilkan font */
+    color: #fff;
+    box-shadow: inset 0 0 6px rgba(0, 255, 255, 0.1);
+    transition: box-shadow 0.3s, border-color 0.3s;
+  }
+  
+  .form-input::placeholder {
+    color: rgba(200, 255, 255, 0.5);
+  }
+  
+  /* Fokus input agar lebih 'neon' */
+  .form-input:focus {
+    outline: none;
+    border-color: #00f2ff;
+    box-shadow: 0 0 6px #00f2ff, inset 0 0 6px rgba(0, 255, 255, 0.2);
+  }
+  
+  /* 🎚 Select HTML (form-select) */
+  .form-select {
+    width: 100%;
+    background: rgba(30, 30, 30, 1);
+    border-radius: 6px;
+    border: 1px solid rgba(0, 255, 255, 0.2);
+    padding: 8px;
+    font-size: 0.85rem;
+    color: #fff;
+    box-shadow: inset 0 0 6px rgba(0, 255, 255, 0.1);
+    transition: box-shadow 0.3s, border-color 0.3s;
+  }
+  
+  .form-select:focus {
+    outline: none;
+    border-color: #00f2ff;
+    box-shadow: 0 0 6px #00f2ff, inset 0 0 6px rgba(0, 255, 255, 0.2);
+  }
+  
+  /* 🔘 Tombol Submit */
+  .submit-button {
+    width: 100%;
+    background: linear-gradient(45deg, #00f0ff, #0066ff);
+    color: white;
+    font-size: 0.9rem;        /* Lebih kecil dari 1rem */
+    font-weight: bold;
+    padding: 10px 12px;       /* Kurangi padding */
+    border-radius: 8px;       /* Lebih kecil dari 10px */
+    box-shadow: 0 0 10px rgba(0, 255, 255, 0.8);
+    cursor: pointer;
+    transition: background 0.3s ease-in-out, transform 0.2s;
+    border: none;
+    text-shadow: 0 0 4px rgba(255, 255, 255, 0.5);
+  }
+  
+  .submit-button:hover {
+    background: linear-gradient(45deg, #00f2ff, #0099ff);
+    transform: translateY(-1px);
+  }
+  
+  .submit-button:active {
+    transform: scale(0.98);
+  }
+  
+  /* 🔒 Disabled state jika loading */
+  .submit-button:disabled {
+    opacity: 0.7;
+    cursor: not-allowed;
+    transform: none;
+  }
+  
