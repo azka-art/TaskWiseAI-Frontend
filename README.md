@@ -42,3 +42,7 @@ npm run dev
 ## 📜 Lisensi
 Proyek ini menggunakan lisensi MIT. Anda bebas menggunakan dan memodifikasinya.
 
+## 📝 Dokumentasi
+[🧐Get to know more!](https://www.canva.com/design/DAGgGiQS6DI/XeY5BkEO8-CToLEDWhv86g/edit?utm_content=DAGgGiQS6DI&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton)
+
+
